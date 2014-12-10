@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<title>Xofo - Under Construction | Video Background</title>
+		
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no">
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-flat.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="images/favicon.png">
+	</head>
+	
+	<body>	
+		
+		<!-- BEGIN MAIN -->
+		<header class="section-main" id="top">
+			<div class="container main-container">
+				<div class="title">
+					<a href="#top" class="scroll img-link"><img class="logo" src="images/logo.png" alt="Xofo" /></a>
+					<h1>Coming Soon</h1>
+					<ul class="bSlider">
+						<li>Our brand new site is almost ready to launch.</li>
+						<li>Please check back later or read more about us below.</li>
+					</ul>
+					<a href="#countdown-section" class="scroll down-link animated bounce"><i class="fa fa-chevron-down"></i></a>
+				</div>
+			</div>
+			<div class="videoMuteButton" onclick="$('#bgndVideo').toggleVolume(); $('.videoButton.notmuted').toggleClass('mute');">
+				<div class="videoButton notmuted"><i class="fa fa-volume-up"></i></div>
+				<div class="videoButton muted"><i class="fa fa-volume-off"></i></div>
+			</div>					
+		</header>		
+		<!-- END MAIN -->
+		
+		<!-- BEGIN COUNTDOWN -->
+		<section class="section countdownsection" id="countdown-section">
+			<div class="container">
+				<h2 class="coloured-h2">Time until launch.</h2>
+				<div id="countdown" class="row">
+					<div class="count col-md-3 col-xs-6">
+						<input class="knob" id="days" data-readonly=true data-min="0" data-max="99" data-skin="tron" data-width="210" data-height="210" data-thickness="0.2">
+						<span class="title-sub">days</span>
+					</div>
+					<div class="count col-md-3 col-xs-6">
+						<input class="knob" id="hours" data-readonly=true data-min="0" data-max="24" data-skin="tron" data-width="210" data-height="210" data-thickness="0.2">
+						<span class="title-sub">hours</span>
+					</div>
+					<div class="count col-md-3 col-xs-6">
+						<input class="knob" id="mins" data-readonly=true data-min="0" data-max="60" data-skin="tron" data-width="210" data-height="210" data-thickness="0.2">
+						<span class="title-sub">minutes</span>
+					</div>
+					<div class="count col-md-3 col-xs-6">
+						<input class="knob" id="secs" data-readonly=true data-min="0" data-max="60" data-skin="tron" data-width="210" data-height="210" data-thickness="0.2">
+						<span class="title-sub">seconds</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END COUNTDOWN -->
+		
+		<!-- BEGIN EMAIL-SUBSCRIBE -->
+		<section class="section subscribesection">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="subscribe-h2">Get Live Updates</h2>
+						<p>No spam promise - only latest news and price!</p>
+					</div>
+					<div class="col-md-6 subscribe">
+						<form id="newsletter-signup" class="subscribe-form" action="php/subscribe.php?action=signup" method="post">
+							<input type="email" class="form-control enteremail" name="signup-email" placeholder="Enter your email address" spellcheck="false" />
+							<button type="submit" id="signup-button" class="signup-button"><i class="fa fa-check"></i></button>
+						</form>
+						<div id="signup-response" class="signup"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END EMAIL-SUBSCRIBE -->
+		
+		<!-- BEGIN ABOUT -->
+		<section class="section aboutsection">
+			<div class="container">
+				<h2 class="coloured-h2">About Us</h2>
+				<p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipiscing elit. Sed vestibulum hendrerit turpis id tempor. Suspendisse orci sapien, iaculis a rutrum at, scelerisque vitae arcu. Donec quis justo vestibulum, euismod erat eu, gravida sem. Nullam euismod ultrices justo, id tempor orci ullamcorper in.</p>
+				<p>Nam commodo, lectus a consectetur hendrerit, justo arcu imperdiet elit, id tincidunt nisl sapien eu eros. Duis suscipit sapien ac massa elementum, ac vehicula enim pretium. Nunc nec erat nibh. Donec rutrum iaculis massa et dapibus. Donec cursus, justo quis aliquet pharetra, lorem enim rhoncus magna, ac porta arcu dolor sed nulla.</p>
+				
+				<div class="about-box-container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="about-box">
+								<span class="about-box-logo"><i class="fa fa-support"></i></span>
+								<h3 class="about-box-title">Great Support</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa vitae nibh aliquam tempus.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="about-box">
+								<span class="about-box-logo"><i class="fa fa-tint"></i></span>
+								<h3 class="about-box-title">Colors</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa vitae nibh aliquam tempus.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="about-box">
+								<span class="about-box-logo"><i class="fa fa-cog"></i></span>
+								<h3 class="about-box-title">Customizable</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa vitae nibh aliquam tempus.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="about-box">
+								<span class="about-box-logo"><i class="fa fa-laptop"></i></span>
+								<h3 class="about-box-title">Responsive</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa vitae nibh aliquam tempus.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END ABOUT -->
+		
+		<!-- BEGIN CONTACT -->
+		<section class="section contactsection">
+			<div class="container">
+				<h2 class="light-h2">Contact</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p>If you have any questions, comments or suggestions, we would love to hear from you. Please contact us at any time and we'll get back to you within 24 hours.</p>
+						<ul class="contact-box">
+							<li><i class="fa fa-fw fa-map-marker"></i>123 Some Street, Some City, UK</li>
+							<li><i class="fa fa-fw fa-phone"></i>012 3456 7890</li>
+							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">info@mycompanyname.com</a></li>
+							<li><i class="fa fa-fw fa-globe"></i><a href="">mycompanyname.com</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<div class="contact-wrap">
+							<form id="contact-us" action="php/contact.php?action=contact" method="post">
+
+							<div class="alert alert-success"><!-- Success Message --><i class="fa fa-check"></i> Your email was sent. Thanks!</div>
+							
+							<div class="alert alert-danger"><!-- Error Message --><i class="fa fa-warning"></i>Please fix the errors and try again.</div>
+							
+								<input type="text" class="form-control requiredField" id="contactName" name="contactName" placeholder="Name" spellcheck="false" />
+								<input type="email" class="form-control requiredField email" id="email" name="email" placeholder="Email" spellcheck="false" />
+								<textarea class="form-control message-box requiredField" placeholder="Message" name="comments" id="commentsText" rows="5"></textarea>
+								<input type="submit" class="btn default-btn submit-btn" name="submit" id="contact-button" value="Send" />
+								<input type="hidden" name="submitted" id="submitted" value="true" />
+								<div class="contact-loading">
+									Please Wait .. <i class="fa fa-life-ring fa-spin fa-fw"></i>
+								</div>
+								
+							</form>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</section>
+		<!-- END CONTACT -->
+		
+		<!-- BEGIN FOOTER -->
+		<footer class="section footersection">
+			<div class="container" style="margin-top: 6px;">
+				<div class="row">
+					<div class="col-md-6 social-icon">
+						<!-- Social Icons -->
+						<a href="" target="_blank" class="footer-social"><i class="fa fa-fw fa-twitter"></i></a>
+						<a href="" target="_blank" class="footer-social"><i class="fa fa-fw fa-facebook"></i></a>
+						<a href="" target="_blank" class="footer-social"><i class="fa fa-fw fa-dribbble"></i></a>
+						<!-- End Social Icons -->
+					</div>
+					<div class="col-md-6 copyright">
+						© <a href="http://themeforest.net/user/cherapal9" target="_blank">Cherapal</a> 2014. All right reserved.
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+		
+		<!-- Background Video container -->
+		<a id="bgndVideo" class="player"></a>
+		
+		<!-- Loading Page Overlay -->
+		<div class="preloader">
+			<noscript><div class="noscript-error"><i class="fa fa-info-circle"></i>Enable JavaScript to see this site working properly.</div></noscript>
+			<div class="preloader-container">
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+					<span>Loading..</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- JAVASCRIPT -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.knob.js"></script>
+		<script type="text/javascript" src="js/countdown.js"></script>
+		<script type="text/javascript" src="js/emailsubscribe.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+		<script type="text/javascript" src="js/placeholders.min.js"></script>
+		<script type="text/javascript" src="js/xofo.js"></script>
+		
+		<script>
+			// SETTINGS for XOFO Coming Soon Template
+			// Check documentation for guidline
+			// ==== color SCHEME ====
+			var color = "#169AA0";
+			var bgOpacityLevel = "0.80";
+
+
+			// ==== SLIDESHOW BACKGROUND ====
+			var slideshowBackground = 'off';
+
+			var slideshowBackgroundURLS = [
+				"IMAGE-LINK-1",
+				"IMAGE-LINK-2",
+				"IMAGE-LINK-3",
+			];
+
+			var slideshowFade = 1000;
+			var slideshowDuration = 4000;
+
+					
+			// ==== VIDEO BACKGROUND ====
+			var videoBackground = 'on';
+			var videoBackgroundURL = 'https://www.youtube.com/watch?v=l_tHTmd5pgk';
+			var videoMuted = true;
+
+
+			// ==== COUNTDOWN ====
+			var countdownDate = "01 January 2015 00:00:00";
+		</script>		
+	</body>
+</html>
